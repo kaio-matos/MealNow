@@ -1,13 +1,60 @@
+:root {
+  --primary-font: "Mochiy Pop One";
+  --second-font: "Poppins";
+  --text-font: "Source Sans Pro";
+}
+
 body {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  background-color: rgb(41, 41, 41);
-  color: #d4d4d4;
+  background-color: #ffffff;
+  padding: 2rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.title {
+  font-family: var(--primary-font);
+  color: rgb(26, 26, 26);
+}
+
+p,
+.text {
+  font-family: var(--text-font);
+}
+ul {
+  font-family: var(--second-font);
+}
+
+button {
+  padding: 2rem 4rem;
+  background-color: #ffff;
+  outline: none;
+  border: none;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.37);
+  border-radius: 1rem;
+  cursor: pointer;
+
+  font-family: var(--second-font);
+  font-weight: 400;
+
+  transition: 500ms;
+}
+
+button:hover {
+  transform: scale(1.025);
+  box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.37);
+}
+
+button:active {
+  background-color: rgb(216, 213, 171);
+  box-shadow: 3px 3px 15px rgba(0, 0, 0, 0);
 }

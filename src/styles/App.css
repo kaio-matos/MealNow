@@ -1,0 +1,113 @@
+.App {
+  overflow-x: hidden;
+}
+
+main {
+  padding: 4rem;
+}
+
+/* --------- Animation --------- */
+.hide {
+  transform: translateX(500px);
+  opacity: 0;
+  transition: 1s;
+}
+
+.active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: 1s;
+}
+
+/* --------------------- Recipe --------------------- */
+.recipe_container {
+  border-radius: 1rem;
+}
+
+/* --------- Name --------- */
+.recipe_name {
+  font-size: 3rem;
+  margin-top: 0;
+}
+
+.recipe_additional_info {
+  display: grid;
+  grid-template: auto auto / auto auto;
+  width: fit-content;
+  gap: 1rem;
+
+  margin-bottom: 1rem;
+}
+
+.recipe_additional_info > p {
+  margin: 0;
+  font-family: var(--second-font);
+}
+
+/* --------- Image | Ingredients --------- */
+.recipe_ingredients_image_container {
+  display: flex;
+  align-items: center;
+}
+
+/* --------- Image --------- */
+.recipe_image_container {
+  height: 27rem;
+  overflow: hidden;
+  width: 100%;
+}
+
+.recipe_image_container img {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 100%;
+
+  transition: 500ms;
+}
+
+.recipe_image_container img:hover {
+  transform: scale(1.025);
+}
+
+/* --------- Ingredients --------- */
+.recipe_ingredients {
+  padding: 0 3rem;
+  width: max-content;
+  flex-shrink: 0;
+}
+
+.recipe_ingredients h3 {
+  margin-top: 0;
+}
+
+.recipe_ingredients div {
+  display: flex;
+  border: 2px solid rgb(255, 172, 172);
+  width: fit-content;
+  border-radius: 1rem;
+}
+
+.recipe_ingredients div ul {
+  list-style-type: none;
+  padding: 2rem 2rem;
+  margin: 0;
+  flex-shrink: 0;
+}
+
+.recipe_ingredients div hr {
+  border: 1px solid rgb(255, 172, 172);
+  margin: 1.5rem 0;
+}
+
+/* --------- Steps --------- */
+.recipe_content {
+  white-space: pre-line;
+  font-size: 1.2rem;
+}
+
+/* --------------------- Youtube --------------------- */
+.recipe_youtube {
+  display: flex;
+  justify-content: space-between;
+}
