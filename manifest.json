@@ -39,7 +39,7 @@
       "density": "4.0"
     }
   ],
-  "start_url": "./mealnow",
+  "start_url": "mealnow",
   "display": "standalone",
   "orientation": "portrait",
   "theme_color": "#1a1a1a",
