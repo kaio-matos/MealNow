@@ -14,7 +14,7 @@ import { mealType, rawMealType } from "./types";
  * ]}
  */
 function transformRawMeal(rawMeal: rawMealType): mealType {
-  let meal = {};
+  let meal = {} as mealType;
   const strIngredients: string[] = [];
   const strMeasures: string[] = [];
 
@@ -41,6 +41,12 @@ function transformRawMeal(rawMeal: rawMealType): mealType {
   });
 
   meal = { ...meal, ingredients: recipeItems };
+
+  const youtubeID = new URL(meal.strYoutube).searchParams.get("v");
+  meal = {
+    ...meal,
+    strYoutube: `https://www.youtube.com/embed/${youtubeID ? youtubeID : ""}`,
+  };
 
   return meal as mealType;
 }

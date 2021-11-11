@@ -17,8 +17,9 @@ export type mealType = {
   strSource: string;
   strTags: string | null;
   strYoutube: string;
+  strInstructions: string;
 
-  ingredients: { ingredient: string; measure: string };
+  ingredients: { ingredient: string; measure: string }[];
 };
 
 export interface rawMealType extends IObjectKeys {
