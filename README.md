@@ -10,6 +10,8 @@ Consiste em um site que traz receitas de comidas aleatoriamente.
 
 Para desenvolver o **design** me inspirei no exemplo dado pelo app-ideas como também pela forma que o [allrecipes](https://www.allrecipes.com/recipe/285644/cheesy-pumpkin-scones-with-walnuts-and-sage/) fazem a montagem das receitas
 
+[Website](https://kaio-matos.github.io/MealNow/)
+
 ## Imagens
 
 ![image](README/state-0.png)
