@@ -1,0 +1,13 @@
+header {
+  margin: auto;
+  width: fit-content;
+  text-align: center;
+}
+
+.title {
+  font-size: 3rem;
+}
+
+.subtitle {
+  font-size: 2rem;
+}
