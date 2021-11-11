@@ -6,6 +6,12 @@ main {
   padding: 4rem;
 }
 
+@media screen and (max-width: 500px) {
+  main {
+    padding: 1rem;
+  }
+}
+
 /* --------- Animation --------- */
 .hide {
   transform: translateX(500px);
@@ -28,6 +34,7 @@ main {
 .recipe_name {
   font-size: 3rem;
   margin-top: 0;
+  word-break: break-all;
 }
 
 .recipe_additional_info {
@@ -100,6 +107,28 @@ main {
   margin: 1.5rem 0;
 }
 
+@media screen and (max-width: 650px) {
+  .recipe_ingredients_image_container {
+    flex-direction: column;
+  }
+
+  .recipe_ingredients,
+  .recipe_ingredients div {
+    width: 100%;
+  }
+
+  .recipe_ingredients div ul {
+    flex-grow: 1;
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .recipe_ingredients div ul {
+    padding: 1rem 1rem;
+  }
+}
+
 /* --------- Steps --------- */
 .recipe_content {
   white-space: pre-line;
@@ -110,4 +139,15 @@ main {
 .recipe_youtube {
   display: flex;
   justify-content: space-between;
+}
+
+@media screen and (max-width: 650px) {
+  .recipe_youtube {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .recipe_youtube iframe {
+    width: 100%;
+  }
 }

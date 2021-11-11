@@ -20,3 +20,10 @@ header img {
 .subtitle {
   font-size: 2rem;
 }
+
+@media screen and (max-width: 550px) {
+  header img {
+    left: 2rem;
+    width: 4rem;
+  }
+}

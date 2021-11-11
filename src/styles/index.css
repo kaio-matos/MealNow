@@ -58,3 +58,21 @@ button:active {
   background-color: rgb(216, 213, 171);
   box-shadow: 3px 3px 15px rgba(0, 0, 0, 0);
 }
+
+@media screen and (max-width: 850px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  html {
+    font-size: 10px;
+  }
+}
