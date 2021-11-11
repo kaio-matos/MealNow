@@ -6,7 +6,7 @@ export default function Header() {
 
   return (
     <header>
-      <img src="/MealNow.svg" alt="Are you hungry? MealNow" />
+      <img src="./MealNow.svg" alt="Are you hungry? MealNow" />
       <p className="title">Feeling Hungry?</p>
       <p className="title subtitle">Get a random meal by clicking below</p>
       <button onClick={getRandomMeal}>Get Meal</button>
